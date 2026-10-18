@@ -1,0 +1,7 @@
+<ul class="list bg-base-100 rounded-box shadow-md">
+  @for(item of mockTodos; track item.id){
+    <li class="list-row">
+      <app-list-item  [itemData]="item"></app-list-item>
+    </li>
+  }
+</ul>
