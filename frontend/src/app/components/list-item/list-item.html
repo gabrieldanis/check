@@ -1,10 +1,12 @@
 @let data = itemData();
 
-<div class="size-10 rounded-box flex items-center justify-center" >
-  <app-icon [icon]="data.icon"></app-icon>
-</div>
-<div>
-  <div>{{data.label}}</div>
-  <div class="text-xs uppercase font-semibold opacity-60">{{data.description}}</div>
-</div>
+<li class="list-row">
+  <div class="size-10 rounded-box flex items-center justify-center" >
+    <app-icon [icon]="data.icon"></app-icon>
+  </div>
+  <div>
+    <div>{{data.label}}</div>
+    <div class="text-xs uppercase font-semibold opacity-60">{{data.description}}</div>
+  </div>
+</li>
 
