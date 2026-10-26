@@ -1,10 +1,11 @@
-
 .cdk-drag-placeholder {
   opacity: 0;
 }
+
 .cdk-drag-preview {
   position: relative;
 }
+
 .cdk-drag-preview::after {
   position: absolute;
   inset: 0;
@@ -13,4 +14,3 @@
   opacity: 80%;
   border-radius: var(--radius-box);
 }
-

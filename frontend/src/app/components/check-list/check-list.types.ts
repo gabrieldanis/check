@@ -1,23 +1,16 @@
 import { Icon } from "../../shared/components/icon/icon.types";
 
 
-type Todos = ['workout', 'chore', 'learn', 'social'];
+type TodoTypes = ['workout', 'chore', 'learn', 'social'];
 
-type Todo = Todos[number];
+type TodoType = TodoTypes[number];
 
-type Weekdays = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'];
+type Days = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'];
 
-export type Weekday = Weekdays[number];
-
-export type TodoItem = TodoWithIconTypes & {
-  label: string;
-  id: string;
-  description: string;
-  checked: boolean;
-}
+export type Day = Days[number];
 
 interface TodoWithIcon {
-  type: Todo;
+  type: TodoType;
   icon: Icon;
 }
 
@@ -41,4 +34,12 @@ interface SocialWithIcon extends TodoWithIcon {
   icon: 'user-group';
 };
 
-export type TodoWithIconTypes = WorkoutWithIcon | ChoreWithIcon | LearnWithIcon | SocialWithIcon;
+type TodoWithIconTypes = WorkoutWithIcon | ChoreWithIcon | LearnWithIcon | SocialWithIcon;
+
+export type Todo = TodoWithIconTypes & {
+  label: string;
+  id: string;
+  description: string;
+  checked: boolean;
+}
+

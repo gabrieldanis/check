@@ -1,15 +1,15 @@
 import { Component } from '@angular/core';
 import { mockTodos } from './mock-list';
-import { ListItem } from '../list-item/list-item';
+import { CheckListItem } from '../check-list-item/check-list-item';
 import {CdkDrag, CdkDragDrop, CdkDropList, moveItemInArray} from '@angular/cdk/drag-drop';
 
 @Component({
-  imports: [ListItem, CdkDropList, CdkDrag],
-  selector: 'app-list',
-  styleUrl: './list.css',
-  templateUrl: './list.html',
+  imports: [CheckListItem, CdkDropList, CdkDrag],
+  selector: 'app-check-list',
+  styleUrl: './check-list.css',
+  templateUrl: './check-list.html',
 })
-export class List {
+export class CheckList {
   todos = [...mockTodos];
 
   drop(event: CdkDragDrop<string[]>) {

@@ -1,6 +1,6 @@
-import { TodoItem } from "./list.types";
+import { Todo } from "./check-list.types";
 
-export const mockTodos: TodoItem [] = [
+export const mockTodos: Todo [] = [
   {
     type: 'workout',
     icon: 'dumbbell',

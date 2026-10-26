@@ -1,5 +1,5 @@
 <ul class="list bg-base-100 rounded-box shadow-md overflow-hidden"  cdkDropList (cdkDropListDropped)="drop($event)">
   @for(item of todos; track item.id){
-      <app-list-item cdkDrag class="relative" [itemData]="item"></app-list-item>
+      <app-check-list-item cdkDrag class="relative" [itemData]="item"></app-check-list-item>
   }
 </ul>
